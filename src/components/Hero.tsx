@@ -1,6 +1,8 @@
 import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
+import CV from '../assets/Rechidi_Ahmed_Abdelaaziz_CV.pdf';
+
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -13,7 +15,7 @@ export function Hero() {
   const handleDownloadCV = () => {
     // Create a link to download the CV
     const link = document.createElement('a');
-    link.href = '/assets/Rechidi_Ahmed_Abdelaaziz_CV.pdf';
+    link.href = CV;
     link.download = 'Rechidi_Ahmed_Abdelaaziz_CV.pdf';
     link.click();
   };
