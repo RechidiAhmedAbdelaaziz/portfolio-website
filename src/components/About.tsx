@@ -1,23 +1,23 @@
 import { motion } from 'motion/react';
 import { Card, CardContent } from './ui/card';
-import { GraduationCap, Code, Award, Smartphone } from 'lucide-react';
+import { GraduationCap, Code, Shield, Smartphone } from 'lucide-react';
 
 export function About() {
   const highlights = [
     {
       icon: Smartphone,
       title: 'Mobile Development',
-      description: 'Expertise in Flutter with Bloc state management and clean architecture',
+      description: 'Expertise in Flutter with Clean Architecture and BLoC state management.',
     },
     {
       icon: Code,
-      title: 'Backend Development',
-      description: 'Building scalable backend services with Node.js, Express.js, and NestJS',
+      title: 'Backend Engineering',
+      description: 'Building robust services with NestJS, Node.js, and secure API design.',
     },
     {
-      icon: Award,
-      title: 'Best Practices',
-      description: 'Following SOLID principles, design patterns, and clean architecture',
+      icon: Shield,
+      title: 'Cybersecurity',
+      description: 'Focusing on OWASP Top 10, identity systems (OAuth2, JWT), and data safety.',
     },
   ];
 
@@ -32,47 +32,59 @@ export function About() {
         >
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              Get to know me
+              Who I Am
             </span>
-            <h2 className="mb-4">About Me</h2>
+            <h2 className="mb-4 text-4xl font-bold">About Me</h2>
             <div className="h-1.5 w-24 bg-gradient-to-r from-cyan-500 to-teal-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="max-w-3xl mx-auto mb-16 text-center">
+          <div className="max-w-4xl mx-auto mb-16 text-center">
             <p className="text-xl text-foreground/80 mb-6 leading-relaxed">
-              Computer science student at ESI-SBA, passionate about mobile and web development. 
-              Experienced in building mobile applications using Flutter and backend services with Node.js and Express.js. 
-              Strong problem-solving skills and a keen eye for detail.
+              I am a Software Engineer and Cybersecurity student who thrives in the space between functionality and security.
+              I focus on writing code that solves real problems for real people, making applications more resilient
+              without sacrificing the user experience.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Eager to learn new technologies and contribute to innovative projects. 
-              I focus on delivering high-quality products that provide excellent user experiences 
-              while maintaining clean, efficient code following best practices.
+              Currently deepening my expertise in Software Engineering and Application Security at ESI Sidi Bel Abbes,
+              actively researching performance optimization and implementing OWASP-aligned security controls.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-3xl mx-auto mt-12">
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-cyan-500/5 to-teal-500/5 border-2 border-primary/10 hover:border-primary/20 transition-all">
-                <h3 className="mb-5 flex items-center gap-3 text-xl">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto mt-12">
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-cyan-500/5 to-teal-500/5 border-2 border-primary/10 hover:border-primary/20 transition-all shadow-sm">
+                <h3 className="mb-5 flex items-center gap-3 text-2xl font-semibold">
                   <div className="p-2 bg-primary/10 rounded-lg">
-                    <GraduationCap className="h-6 w-6 text-primary" />
+                    <GraduationCap className="h-7 w-7 text-primary" />
                   </div>
                   Education
                 </h3>
-                <p className="text-foreground/90 mb-2 font-medium text-lg">Ingeniorat in Computer Science</p>
-                <p className="text-muted-foreground mb-1">ESI-SBA (Ecole Superieure d'Informatique)</p>
-                <p className="text-sm text-primary font-medium">Expected Graduation: 2027</p>
-              </div>
-              
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-teal-500/5 to-cyan-500/5 border-2 border-primary/10 hover:border-primary/20 transition-all">
-                <h3 className="mb-5 text-xl">Languages</h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-foreground/90 font-medium text-lg">Arabic</p>
-                    <p className="text-muted-foreground">Native</p>
+                    <p className="text-foreground/90 font-bold text-xl">Engineering Degree in Computer Science</p>
+                    <p className="text-muted-foreground text-lg">ESI Sidi Bel Abbes</p>
+                    <p className="text-sm text-cyan-500 font-semibold mt-1">Expected Sept 2027 • Sidi Bel Abbes, Algeria</p>
                   </div>
-                  <div>
-                    <p className="text-foreground/90 font-medium text-lg">English</p>
-                    <p className="text-muted-foreground">Professional Proficiency</p>
+                </div>
+              </div>
+
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-teal-500/5 to-cyan-500/5 border-2 border-primary/10 hover:border-primary/20 transition-all shadow-sm">
+                <h3 className="mb-5 flex items-center gap-3 text-2xl font-semibold">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <Smartphone className="h-7 w-7 text-primary" />
+                  </div>
+                  Languages
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <p className="text-foreground/90 font-semibold text-lg">Arabic</p>
+                    <span className="px-3 py-1 bg-primary/10 rounded-full text-xs font-bold text-primary">NATIVE</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <p className="text-foreground/90 font-semibold text-lg">English</p>
+                    <span className="px-3 py-1 bg-primary/10 rounded-full text-xs font-bold text-primary">PROFESSIONAL</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <p className="text-foreground/90 font-semibold text-lg">French</p>
+                    <span className="px-3 py-1 bg-primary/10 rounded-full text-xs font-bold text-primary">INTERMEDIATE</span>
                   </div>
                 </div>
               </div>

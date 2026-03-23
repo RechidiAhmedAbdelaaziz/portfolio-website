@@ -45,7 +45,7 @@ export function Hero() {
             transition={{ delay: 0.4 }}
           >
             <h2 className="mb-8 text-3xl md:text-4xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent font-bold">
-              Fullstack Developer (Mobile & Web)
+              Software Engineer & Cybersecurity Student
             </h2>
           </motion.div>
           <motion.p
@@ -54,9 +54,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            Computer science student at ESI-SBA with a passion for mobile and web development.
-            Experienced in building mobile applications using Flutter and backend services with Node.js.
-            Strong problem-solving skills and a keen eye for detail.
+            I love building things that are both fast and secure. Whether it's crafting a smooth Flutter app or engineering a robust backend in NestJS, I focus on writing code that solves real problems.
           </motion.p>
 
           <motion.div

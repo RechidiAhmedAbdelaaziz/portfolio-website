@@ -1,19 +1,15 @@
 import { motion } from 'motion/react';
 import { Badge } from './ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { 
-  Smartphone, 
-  Globe, 
-  Server, 
-  Database, 
-  Wrench, 
-  BookOpen,
+import {
+  Smartphone,
+  Server,
+  Database,
+  Shield,
   Blocks,
   Code2,
   Layers,
   FileCode,
-  Palette,
-  Braces,
   Link,
   Cpu,
   GitBranch,
@@ -22,76 +18,74 @@ import {
   Flame,
   Monitor,
   Package,
-  Settings
+  Settings,
+  Lock,
+  Search,
+  Key
 } from 'lucide-react';
 
 export function Skills() {
   const skillCategories = [
     {
-      category: 'Mobile Development',
+      category: 'Frontend (Mobile)',
       icon: Smartphone,
       skills: [
         { name: 'Flutter', icon: Blocks },
         { name: 'Dart', icon: Code2 },
-        { name: 'Bloc State Management', icon: Layers },
-        { name: 'Flutter Web', icon: Globe },
+        { name: 'BLoC/Cubit', icon: Layers },
         { name: 'Clean Architecture', icon: Package },
+        { name: 'Retrofit/Dio', icon: Link },
+        { name: 'Freezed/Equatable', icon: Settings },
+        { name: 'FL Chart/Lottie', icon: FileCode },
       ],
     },
     {
-      category: 'Web Development',
-      icon: Globe,
-      skills: [
-        { name: 'React.js', icon: Braces },
-        { name: 'TypeScript', icon: FileCode },
-        { name: 'JavaScript', icon: Code2 },
-        { name: 'Tailwind CSS', icon: Palette },
-        { name: 'HTML5', icon: FileCode },
-        { name: 'CSS3', icon: Palette },
-      ],
-    },
-    {
-      category: 'Backend Development',
+      category: 'Backend Engineering',
       icon: Server,
       skills: [
-        { name: 'Node.js', icon: Server },
-        { name: 'Express.js', icon: Cpu },
         { name: 'NestJS', icon: Layers },
-        { name: 'RESTful APIs', icon: Link },
-        { name: 'Socket.io', icon: Send },
-        { name: 'GraphQL', icon: Braces },
+        { name: 'Node.js', icon: Server },
+        { name: 'Express', icon: Cpu },
+        { name: 'Identity (OAuth2.0)', icon: Key },
+        { name: 'JWT Architecture', icon: Lock },
+        { name: 'RBAC', icon: Settings },
       ],
     },
     {
-      category: 'Database',
+      category: 'Security Expertise',
+      icon: Shield,
+      skills: [
+        { name: 'OWASP Top 10', icon: Shield },
+        { name: 'Network Security', icon: Monitor },
+        { name: 'Ethical Hacking', icon: Lock },
+        { name: 'Data Sanitization', icon: Search },
+        { name: 'MFA Systems', icon: Key },
+        { name: 'Secure Storage', icon: Lock },
+        { name: 'Zero-Trust Architecture', icon: Shield },
+        { name: 'JWT Security/Rotation', icon: Lock },
+        { name: 'NoSQL/XSS Sanitization', icon: Search },
+        { name: 'Secure Build Pipelines', icon: Settings },
+      ],
+    },
+    {
+      category: 'Infrastructure',
+      icon: Container,
+      skills: [
+        { name: 'Docker', icon: Container },
+        { name: 'Docker Compose', icon: Layers },
+        { name: 'Firebase', icon: Flame },
+        { name: 'Cloudinary', icon: Link },
+        { name: 'CI/CD', icon: Settings },
+        { name: 'Linux', icon: Monitor },
+      ],
+    },
+    {
+      category: 'Persistence',
       icon: Database,
       skills: [
-        { name: 'MongoDB', icon: Database },
-        { name: 'MySQL', icon: Database },
-        { name: 'Prisma', icon: Layers },
-      ],
-    },
-    {
-      category: 'Tools & Practices',
-      icon: Wrench,
-      skills: [
-        { name: 'Git', icon: GitBranch },
-        { name: 'GitHub', icon: GitBranch },
-        { name: 'Docker', icon: Container },
-        { name: 'Postman', icon: Send },
-        { name: 'Firebase', icon: Flame },
-        { name: 'Linux', icon: Monitor },
-        { name: 'CI/CD', icon: Settings },
-      ],
-    },
-    {
-      category: 'Software Engineering',
-      icon: BookOpen,
-      skills: [
-        { name: 'Clean Architecture', icon: Package },
-        { name: 'SOLID Principles', icon: Layers },
-        { name: 'Design Patterns', icon: Blocks },
-        { name: 'Agile Methodologies', icon: Settings },
+        { name: 'MongoDB/Mongoose', icon: Database },
+        { name: 'NoSQL Indexing', icon: Search },
+        { name: 'SQL', icon: Database },
       ],
     },
   ];
@@ -135,9 +129,9 @@ export function Skills() {
                   <CardContent>
                     <div className="flex flex-wrap gap-2.5">
                       {category.skills.map((skill, skillIndex) => (
-                        <Badge 
-                          key={skillIndex} 
-                          variant="secondary" 
+                        <Badge
+                          key={skillIndex}
+                          variant="secondary"
                           className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 hover:from-cyan-500/20 hover:to-teal-500/20 transition-all border-primary/20 px-3.5 py-1.5 text-sm font-medium hover:scale-105 flex items-center gap-1.5"
                         >
                           <skill.icon className="h-3.5 w-3.5" />
