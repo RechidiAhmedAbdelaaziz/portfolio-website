@@ -175,7 +175,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
         {hasImages && (
           <div className="shrink-0 relative overflow-hidden bg-muted/30 py-10 px-6 h-[300px] flex items-center justify-center">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-            
+
             <div className="relative z-20 drop-shadow-2xl w-full max-w-[280px]">
               <DeviceMockup
                 src={images[currentImageIndex]}
@@ -186,14 +186,14 @@ function ProjectCard({ project, index }: ProjectCardProps) {
             </div>
             {images.length > 1 && (
               <>
-                <button 
-                  onClick={prevImage} 
+                <button
+                  onClick={prevImage}
                   className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-background/80 blur-backdrop hover:bg-primary hover:text-white text-foreground p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-lg"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
-                <button 
-                  onClick={nextImage} 
+                <button
+                  onClick={nextImage}
                   className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-background/80 blur-backdrop hover:bg-primary hover:text-white text-foreground p-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-all shadow-lg"
                 >
                   <ChevronRight className="h-5 w-5" />
@@ -262,9 +262,9 @@ function ProjectCard({ project, index }: ProjectCardProps) {
           <div className="mt-auto pt-4 space-y-6">
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag, tagIndex) => (
-                <Badge 
-                  key={tagIndex} 
-                  variant="outline" 
+                <Badge
+                  key={tagIndex}
+                  variant="outline"
                   className="bg-primary/5 hover:bg-primary hover:text-white transition-all duration-300 border-primary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-lg"
                 >
                   {tag}
