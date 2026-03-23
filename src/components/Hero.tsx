@@ -30,17 +30,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <motion.div 
-            className="mb-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium tracking-wide border border-primary/20">
-              👋 Hello, I'm
-            </span>
-          </motion.div>
-          <motion.h1 
+
+          <motion.h1
             className="mb-6 text-5xl md:text-6xl lg:text-7xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,18 +48,18 @@ export function Hero() {
               Fullstack Developer (Mobile & Web)
             </h2>
           </motion.div>
-          <motion.p 
+          <motion.p
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            Computer science student at ESI-SBA with a passion for mobile and web development. 
-            Experienced in building mobile applications using Flutter and backend services with Node.js. 
+            Computer science student at ESI-SBA with a passion for mobile and web development.
+            Experienced in building mobile applications using Flutter and backend services with Node.js.
             Strong problem-solving skills and a keen eye for detail.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap items-center justify-center gap-4 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -84,7 +75,7 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex items-center justify-center gap-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
