@@ -40,7 +40,7 @@ export function Footer() {
             </Button>
             <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary transition-all rounded-full h-10 w-10" asChild>
               <a
-                href="mailto:aa.rechidi@esi-sba.dz"
+                href="mailto:ahmed.a.rechidi@gmail.com"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />

@@ -70,8 +70,8 @@ export function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'aa.rechidi@esi-sba.dz',
-      href: 'mailto:aa.rechidi@esi-sba.dz',
+      value: 'ahmed.a.rechidi@gmail.com',
+      href: 'mailto:ahmed.a.rechidi@gmail.com',
     },
     {
       icon: Phone,
